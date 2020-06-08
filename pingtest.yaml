@@ -1,0 +1,8 @@
+---
+- hosts: fs-lb1
+  gather_facts: true
+  become: false
+
+  tasks:
+    - name: Ping the hosts
+      ping:
